@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.voting">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Voting"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".guidline"></activity>
+        <activity
+            android:name=".viewresult"
+            android:exported="true" />
+        <activity
+            android:name=".CUSTOM2"
+            android:exported="true" />
+        <activity
+            android:name=".VOTING"
+            android:exported="true" />
+        <activity
+            android:name=".viewstatus"
+            android:exported="true" />
+        <activity
+            android:name=".APPLYFORCANDIDATE"
+            android:exported="true" />
+        <activity
+            android:name=".STUDENTHOME"
+            android:exported="true" />
+        <activity
+            android:name=".login"
+            android:exported="true" />
+        <activity
+            android:name=".addcompl"
+            android:exported="true" />
+        <activity
+            android:name=".viewreply"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

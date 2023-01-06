@@ -1,0 +1,28 @@
+{% extends 'officerindex.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="addpost1">
+  <table width="200" border="0" id="customers">
+    <tr>
+      <th>post</th>
+      <th>description</th>
+      <th>date</th>
+      <th></th>
+    </tr>{% for i in val %}
+    <tr>
+      <td>{{i[1]}}</td>
+      <td>{{i[2]}}</td>
+      <td>{{i[3]}}</td>
+      <td><a href="deletepost?id={{i[0]}}">delete</a></td>
+    </tr>{% endfor %}
+    <tr>
+      <td colspan="2"><label>
+
+        <div align="left">
+          <input type="submit" name="Submit" value="Add" />
+        </div>
+          </label></td></tr>
+  </table>
+</form>
+</body>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'officerindex.html' %}
+{% block body %}
+<form name="form1" method="post" action="verifystud">
+  <table width="383" border="0" id="customers">
+    <tr>
+      <th width="50">Student name </th>
+      <th width="71">Department</th>
+      <th width="37">Email id  </th>
+      <th width="49">Phone number </th>
+      <th width="27">Post</th>
+      <th width="27">Date</th>
+      <th width="109">Verify</th>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <td>{{i[4]}}</td>
+      <td>{{i[6]}}</td>
+      <td>{{i[9]}}</td>
+      <td>{{i[8]}}</td>
+      <td>{{i[11]}}</td>
+      <td>{{i[1]}}</td>
+      <td><p><a href="/approvestud?id={{i[0]}}">approve </a></p>
+      <p><a href="/rejectstud?id={{i[0]}}">reject</a></p></td>
+    </tr>
+    {% endfor %}
+  </table>
+</form>
+{% endblock %}
+

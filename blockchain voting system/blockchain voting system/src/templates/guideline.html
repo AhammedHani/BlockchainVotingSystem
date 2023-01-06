@@ -1,0 +1,21 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+<form id="form1" name="form1" method="post" action="addguideline">
+  <table width="200" border="0" id="customers">
+    <tr>
+      <th>Guideline</th>
+      <td><label>
+        <textarea name="textarea"  required></textarea>
+      </label></td>
+    </tr>
+    <tr>
+      <td colspan="2"><label>
+        <div align="center">
+          <input type="submit" name="Submit" value="Submit" />
+        </div>
+      </label></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+</form>
+{% endblock %}

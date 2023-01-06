@@ -1,0 +1,47 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="pollingofficer">
+  <table width="200" border="0" id="customers">
+    <tr>
+      <th>Officer Name</th>
+      <td><label>
+        <input type="text" name="textfield" required/>
+      </label></td>
+    </tr>
+
+    <tr>
+      <th>Phone number </th>
+      <td><label>
+        <input type="text" name="textfield2" required />
+      </label></td>
+    </tr>
+    <tr>
+      <th>Email id </th>
+      <td><label>
+        <input type="text" name="textfield3" required />
+      </label></td>
+    </tr>
+     <tr>
+      <th>Username </th>
+      <td><label>
+        <input type="text" name="textfield4" required />
+      </label></td>
+    </tr>
+     <tr>
+      <th>Password</th>
+      <td><label>
+        <input type="password" name="textfield5" required />
+      </label></td>
+    </tr>
+    <tr>
+      <td colspan="2"><label>
+        <div align="center">
+          <input type="submit" name="Submit" value="Submit" class="btn btn-secondary"/>
+          </div>
+      </label></td>
+    </tr>
+  </table>
+</form>
+{% endblock %}

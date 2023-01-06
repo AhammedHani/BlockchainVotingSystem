@@ -1,0 +1,20 @@
+{% extends 'officerindex.html' %}
+{% block body %}
+<form id="form1" name="form1" method="post" action="/addreportissue1#about">
+  <table width="200" border="0" id="customers">
+    <tr>
+      <th>Report</th>
+      <th>Date</th>
+      <th>&nbsp;</th>
+    </tr>{% for i in val %}
+    <tr>
+      <td>{{i[2]}}</td>
+      <td>{{i[3]}}</td>
+      <td><a href="/deletereport?id={{i[0]}}">Delete</a></td>
+    </tr>{% endfor %}
+    <tr>
+      <td colspan="3" align="center"><input type="submit" value="Add New" class="btn btn-secondary"/></td>
+    </tr>
+  </table>
+</form>
+{% endblock %}

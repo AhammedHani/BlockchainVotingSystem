@@ -1,0 +1,48 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'adminindex.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="searchnomine#about">
+  <table width="200" border="0" id="customers">
+    <tr>
+      <th>Post</th>
+      <td colspan="6"><label>
+        <select name="select">
+          {% for i in val %}
+          <option value="{{i[0]}}">{{i[1]}}</option>
+          {% endfor %}
+        </select>
+        <input type="submit" name="Submit" value="Search" />
+      </label></td>
+    </tr>
+
+    <tr>
+      <th>Student name </th>
+      <th>Register number </th>
+      <th>Course details </th>
+      <th>Semester</th>
+      <th>Application</th>
+      <th>Phone</th>
+      <th>&nbsp;</th>
+    </tr>
+    {% for i in val1 %}
+    <tr>
+      <td>&nbsp;{{i[9]}}</td>
+      <td>&nbsp;{{i[10]}}</td>
+      <td>&nbsp;{{i[11]}}</td>
+      <td>&nbsp;{{i[12]}}</td>
+      <td><a href="static/application/{{i[5]}}">Application</a></td>
+      <td>&nbsp;{{i[13]}}</td>
+      <td><a href="verify?id={{i[0]}}">verify</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

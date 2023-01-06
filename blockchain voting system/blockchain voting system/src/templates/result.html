@@ -1,0 +1,62 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'officerindex.html' %}
+{% block body %}
+<body>
+      <form id="form1" name="form1" method="post" action="resultsearch#about">
+
+<table width="231" border="0" id="customers">
+  <tr>
+    <th colspan="2">Post
+        <label></label>
+        <select name="select">
+          {% for i in val %}
+            <option value="{{i[0]}}" {% if post== i[0]|string %} selected {% endif %}>{{i[1]}}</option>
+            {% endfor %}
+        </select>
+        <td>
+        <label>
+
+        <input type="submit" name="Submit" value="Search" />
+        </label>
+    </td>
+  </tr>
+
+
+
+
+  <tr>
+    <th width="106">Candidate name </th>
+    <th width="109">Number of votes </th>
+
+  </tr>
+  {% for i in val1 %}
+  <tr>
+    <td>{{i[0]}}</td>
+    <td>{{i[1]}}</td>
+
+  </tr>
+  {% endfor %}
+
+</table>
+ </form>
+<form id="form2" name="form1" method="post" action="publishresult">
+  <table>
+
+  <tr>
+      <td colspan="2">
+        <div align="center">
+          <input type="submit" name="Submit" value="publish" class="btn btn-secondary" />
+        </div>
+      </td>
+    </tr>
+</table>
+</form>
+</body>
+
+<!--</html>-->
+{% endblock %}

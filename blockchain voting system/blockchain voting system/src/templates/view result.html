@@ -1,0 +1,46 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+<form id="form1" name="form1" method="post" action="voteresult#about">
+  
+  <div align="center">
+    <table width="200" border="0" id="customers">
+      <tr>
+        <th>Post</th>
+        <td><label>
+          <select name="select">
+            {% for i in val %}
+            <option value="{{i[0]}}" {%  if i[0]|string ==pid %} selected {% endif %}>{{i[1]}}</option>
+            {% endfor %}
+          </select>
+        </label></td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+        <td><label>
+          <input type="submit" name="Submit" value="Search" class="btn btn-secondary"/>
+        </label></td>
+      </tr>
+      </table>
+	  <table width="200" border="0" id="customers">
+    <tr>
+      <th>Candidate name </th>
+      
+      <th>No.of votes </th>
+      
+      
+      
+    </tr>{% for ii in vals %}
+    <tr>
+      <td>{{ii[0]}}&nbsp;</td>
+      
+      <td>{{ii[1]}}&nbsp;</td>
+      
+      
+      
+    </tr>{% endfor %}
+  </table>
+  </div>
+  <p>&nbsp;</p>
+</form>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="Polling officer">
+  <table width="200" border="0" id="customers">
+    <tr>
+      <th>Name</th>
+      <th>Phone number </th>
+      <th>Email id </th>
+      <th>Manage</th>
+    </tr>{% for i in val %}
+    <tr>
+      <td>{{i[1]}}</td>
+      <td>{{i[2]}}</td>
+      <td>{{i[3]}}</td>
+      <td><a href="/deletepollingofficer?id={{i[0]}}">Delete</a></td>
+    </tr>{% endfor %}
+  </table>
+</form>
+{% endblock %}

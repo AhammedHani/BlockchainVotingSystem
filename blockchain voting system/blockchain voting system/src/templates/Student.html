@@ -1,0 +1,89 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+
+<form action="/addstudentt" method="post" name="form1" id="form1">
+  <table width="200" border="0" id="customers">
+    <tr>
+      <th>Student name </th>
+      <td><label>
+        <input type="text" name="textfield"required pattern="[a-z A-Z]{3,25}" />
+      </label></td>
+    </tr>
+    <tr>
+      <th>Register number </th>
+      <td><label>
+        <input type="text" name="textfield2" required />
+      </label></td>
+    </tr>
+    <tr>
+      <th>Department</th>
+      <td><label>
+        <select name="textfield3" required>
+          <option value="">Select</option>
+           <option>BSC</option>
+          <option>BCA</option>
+           <option>BA</option>
+           <option>B.COM</option>
+        </select>
+      </label></td>
+    </tr>
+    <tr>
+      <th>Sem</th>
+      <td><label>
+      <select name="select" required>
+         <option value="">select</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+      </select>
+      </label></td>
+    </tr>
+    <tr>
+      <th>Gender</th>
+      <td><label>
+        <input name="radiobutton" type="radio" value="male" checked />
+        m 
+        <input name="radiobutton" type="radio" value="female" />f
+      </label></td>
+    </tr>
+    <tr>
+      <th>phone number </th>
+      <td><label>
+        <input type="text" name="textfield4"required pattern="[9876][0-9]{9}" />
+      </label></td>
+    </tr>
+    <tr>
+      <th>Email id </th>
+      <td><label>
+        <input type="text" name="textfield5" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+      </label></td>
+    </tr>
+
+    <tr>
+      <th>User name</th>
+      <td><label>
+        <input type="text" name="textfield6" required/>
+      </label></td>
+    </tr>
+    <tr>
+      <th>Password</th>
+      <td><label>
+        <input type="text" name="textfield7" required pattern="[0-9A-Za-z]{8,15}"/>
+      </label></td>
+    </tr>
+    <tr>
+      <td colspan="2"><label>
+        <div align="center">
+          <input type="submit" name="Submit" value="Submit" class="btn btn-secondary" />
+          </div>
+      </label></td>
+    </tr>
+  </table>
+  <label>
+
+  </label>
+</form>
+{% endblock %}

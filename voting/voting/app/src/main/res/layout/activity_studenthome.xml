@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/ah"
+
+
+
+    tools:context=".STUDENTHOME">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/white"
+            android:text="APPLY FOR CANDIDATE"
+            android:textColor="@color/black" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/white"
+            android:text="Complaints"
+            android:textColor="@color/black" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/white"
+            android:text="VIEW STATUS"
+            android:textColor="@color/black" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/white"
+            android:text="VOTE"
+            android:textColor="@color/black" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/white"
+            android:text="VIEW RESULT"
+            android:textColor="@color/black" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/white"
+            android:text="VIEW GUIDLINES"
+            android:textColor="@color/black" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/white"
+            android:text="LOGOUT"
+            android:textColor="@color/black" />
+    </TableRow>
+
+</LinearLayout>

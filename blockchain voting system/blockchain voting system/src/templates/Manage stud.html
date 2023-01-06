@@ -1,0 +1,29 @@
+{% extends 'adminindex.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="Manage stud">
+  <table width="424" border="0" id="customers">
+    <tr>
+      <th width="37">Name</th>
+      <th width="53">Register number </th>
+      <th width="71">Department</th>
+      <th width="45">Sem</th>
+      <th width="49">Phone number </th>
+      <th width="39">Email id </th>
+       <th width="39">gender </th>
+      <th></th>
+
+    </tr>{% for i in val %}
+    <tr>
+      <td>{{i[2]}}</td>
+      <td>{{i[3]}}</td>
+      <td>{{i[4]}}</td>
+      <td>{{i[5]}}</td>
+      <td>{{i[6]}}</td>
+      <td>{{i[7]}}</td>
+      <td>{{i[8]}}</td>
+      <td><a href="/deletestudent?id={{i[0]}}"> Delete</a></td>
+    </tr>{% endfor %}
+  </table>
+</form>
+{% endblock %}

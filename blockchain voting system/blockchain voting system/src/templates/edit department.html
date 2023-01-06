@@ -1,0 +1,26 @@
+
+{% extends 'adminindex.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="editcode">
+  <table width="200" border="0" id="customers">
+    <tr>
+      <th>Department</th>
+      <td><label>
+        <input type="text" name="textfield" value="{{val[1]}}"/>
+      </label></td>
+    </tr>
+    <tr>
+      <th>Description</th>
+      <td><label>
+        <textarea name="textarea">{{val[2]}}</textarea>
+      </label></td>
+    </tr>
+    <tr>
+      <td colspan="2"><label>
+        <input type="submit" name="Submit" value="update" />
+      </label></td>
+    </tr>
+  </table>
+</form>
+{% endblock %}

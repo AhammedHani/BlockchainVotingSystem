@@ -1,0 +1,25 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'adminindex.html' %}
+{% block body %}
+<body>
+<form action="reply1" method="post">
+  <p align="center"><strong><u>REPLY</u></strong></p>
+  <table width="200" border="0" align="center" id="customers" >
+  <tr>
+    <th scope="row">REPLY</th>
+    <td><textarea name="textarea" required></textarea></td>
+  </tr>
+  <tr>
+    <th colspan="2" scope="row"><input type="submit" name="Submit" value="SENT" class="btn btn-primary "/></th>
+    </tr>
+</table>
+
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'officerindex.html' %}
+{% block body %}
+<form id="form1" name="form1" method="post" action="addreportissue">
+  <table width="200" border="0" id="customers">
+    <tr>
+      <th>Issue</th>
+      <td><label>
+        <textarea name="textarea" required></textarea>
+      </label></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <div align="center">
+          <input type="submit" name="Submit" value="Submit" class="btn btn-secondary" />
+          </div>
+      </td>
+    </tr>
+  </table>
+</form>
+{% endblock %}

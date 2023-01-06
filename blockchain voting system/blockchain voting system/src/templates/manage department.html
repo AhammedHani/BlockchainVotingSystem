@@ -1,0 +1,35 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />-->
+<!--<title>Untitled Document</title>-->
+<!--</head>-->
+{% extends 'adminindex.html' %}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="adddepartment#about">
+  <table width="100" border="0" id="customers">
+    <tr>
+      <th>Department</th>
+      <th>Description</th>
+      <th>&nbsp</th>
+    </tr>
+    {% for i in v %}
+    <tr>
+      <td>{{i[1]}}</td>
+      <td>{{i[2]}}</td>
+      <td><p><a href="edit?id={{i[0]}}#about">edit</a></p>
+      <p><a href="delete?id={{i[0]}}">delete</a></p></td>
+    </tr>
+    {% endfor %}
+
+
+    <tr>
+      <td colspan="3" align="center"><input type="submit" name="Submit" value="add new"  class="btn btn-secondary"/></td>
+    </tr>
+  </table>
+</form>
+</body>
+<!--</html>-->
+{% endblock %}
