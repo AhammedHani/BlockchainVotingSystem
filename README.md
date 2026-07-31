@@ -2,9 +2,13 @@
 
 Blockchain Voting System is a secure web application designed to modernize the voting process using blockchain technology. The platform ensures transparency, security and integrity by providing a tamper-proof environment for casting and counting votes while maintaining voter confidentiality.
 
+---
+
 ## 🚀 Project Overview
 
 Blockchain Voting System transforms traditional elections into a secure and transparent digital experience. By leveraging blockchain concepts, it eliminates vote manipulation, ensures accurate result calculation and provides a reliable platform for administrators and voters.
+
+---
 
 ## 🌟 Key Features
 
@@ -16,6 +20,8 @@ Blockchain Voting System transforms traditional elections into a secure and tran
 
 - **User-Friendly Interface**<br>
   Simple and intuitive interface for voters and administrators to manage elections and participate with ease.
+
+---
 
 ## 🛠 Main Functionalities
 
@@ -35,6 +41,8 @@ Blockchain Voting System transforms traditional elections into a secure and tran
 * Track voting status.
 * View election results once officially published.
 
+---
+
 ## 🔐 Security Features
 
 * Blockchain-inspired tamper-proof vote storage.
@@ -43,6 +51,8 @@ Blockchain Voting System transforms traditional elections into a secure and tran
 * Accurate and transparent vote counting.
 * Protection against duplicate voting.
 
+---
+
 ## 💻 Technologies Used
 
 * **Frontend:** HTML, CSS, JavaScript
@@ -50,9 +60,13 @@ Blockchain Voting System transforms traditional elections into a secure and tran
 * **Database:** MySQL
 * **Concept:** Blockchain
 
+---
+
 ## 🌐 Explore Blockchain Voting System
 
 Blockchain Voting System demonstrates how blockchain concepts can be applied to create a secure, transparent and reliable digital election platform while enhancing trust in the voting process.
+
+---
 
 ## 📧 Contact
 
